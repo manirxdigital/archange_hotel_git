@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sona Template">
+    <meta name="keywords" content="Sona, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les Archanges MINOVA | page d'Accueil</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles externes -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Ajout: CSS spécifique pour forcer l'apparence du lien actif -->
+    <style>
+      /* Texte du lien actif (desktop) */
+      .mainmenu ul li.active > a,
+      .mainmenu ul li > a.active {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+
+      /* Si le design original utilise underline / background, ajoute ceci aussi */
+      .mainmenu ul li.active > a::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-top: 6px;
+        background: #dfa974;
+        border-radius: 2px;
+      }
+
+      /* Mobile / offcanvas menu : couvrir les clones/variantes */
+      .offcanvas-menu-wrapper .mainmenu ul li.active > a,
+      .mobile-menu .mainmenu ul li.active > a {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+
+      /* Cas où l'élément actif est sur l'<a> plutôt que sur le <li> */
+      .mainmenu ul li > a.active,
+      .offcanvas-menu-wrapper .mainmenu ul li > a.active {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder"><div class="loader"></div></div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open"><i class="icon_menu"></i></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close"><i class="icon_close"></i></div>
+        <div class="search-icon search-switch"><i class="icon_search"></i></div>
+
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="img/flag.jpg" alt="">
+                <span>EN <i class="fa fa-angle-down"></i></span>
+                <div class="flag-dropdown">
+                    <ul><li><a href="#">Fr</a></li></ul>
+                </div>
+            </div>
+            <a href="#" class="bk-btn">Réservez maintenant</a>
+        </div>
+
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Accueil</a></li>
+                <li><a href="./rooms.html">Chambres</a></li>
+                <li><a href="./about-us.html">À propos de nous</a></li>
+                <li><a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./room-details.html">Détails de la chambre</a></li>
+                        <li><a href="#">Chambre de Luxe</a></li>
+                        <li><a href="#">Chambre Familiale</a></li>
+                        <li><a href="#">Chambre Premium</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Nouvelles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile-menu-wrap"></div>
+
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> +243 XXX XXX XXX</li>
+            <li><i class="fa fa-envelope"></i> iciadressmail.com</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> +243 XXX XXX XXX</li>
+                            <li><i class="fa fa-envelope"></i> iciadressmail@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                            <div class="top-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="bk-btn">Réservez maintenant</a>
+                            <div class="language-option">
+                                <img src="img/flag1.jpg" alt="">
+                                <span>FR <i class="fa fa-angle-down"></i></span>
+                                <div class="flag-dropdown">
+                                    <ul><li><a href="#">En</a></li></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo"><a href="./index.html"><img src="img/logo.png" alt=""></a></div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li class="active"><a href="./index.html">Accueil</a></li>
+                                    <li><a href="./rooms.html">Chambres</a></li>
+                                    <li><a href="./restaurant.html">Restaurant</a></li>
+                                    <li><a href="./about-us.html">À propos de nous</a></li>
+                                    <li><a href="./pages.html">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./room-details.html">Détails de la chambre</a></li>
+                                            <li><a href="./blog-details.html">Détails du blog</a></li>
+                                            <li><a href="#">Chambre Familiale</a></li>
+                                            <li><a href="#">Chambre Premium</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./blog.html">Actualités</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch"><i class="icon_search"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- SCRIPT: définir automatique l'élément actif selon l'URL (utile si li.active n'est pas correct) -->
+    <script>
+      (function(){
+        try {
+          // Récupère tous les liens du menu (desktop + mobile)
+          const links = document.querySelectorAll('.mainmenu a');
+          const current = location.pathname.split('/').pop() || 'index.html';
+
+          links.forEach(a => {
+            // normalization simple : compare le href (nom de fichier) avec location
+            const href = a.getAttribute('href') ? a.getAttribute('href').split('/').pop() : '';
+            if (href === current || (href === '' && current === 'index.html')) {
+              // retire active ailleurs (optionnel)
+              document.querySelectorAll('.mainmenu li.active').forEach(li => li.classList.remove('active'));
+              // ajoute active sur le parent li
+              if (a.parentElement) a.parentElement.classList.add('active');
+              // ajoute aussi la classe sur l'a si nécessaire
+              a.classList.add('active');
+            }
+          });
+        } catch (e) {
+          console.warn('Erreur script active menu:', e);
+        }
+      })();
+    </script>
+</body>
+</html>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="breadcrumb-text">
+                        <h2>Blog & Actualités</h2>
+                        <div class="bt-option">
+                            <a href="./index.html">Accueil</a>
+                            <span>Actualités</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section class="blog-section blog-page spad">
+        <div class="container">
+            <div class="row">
+
+                <!-- Article 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item set-bg" data-setbg="img/blog/blog-1.jpg">
+                        <div class="bi-text">
+                            <span class="b-tag">Découverte</span>
+                            <h4><a href="./blog-details.html">Un Séjour Inoubliable à Minova</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 12 Mars, 2025</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Article Répétés Avec Titres Adaptés -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item set-bg" data-setbg="img/minova.jpeg">
+                        <div class="bi-text">
+                            <span class="b-tag">Voyage</span>
+                            <h4><a href="./blog-details.html">Pourquoi Choisir Minova ?</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 10 Mars, 2025</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item set-bg" data-setbg="img/lackivu.webp">
+                        <div class="bi-text">
+                            <span class="b-tag">Nature</span>
+                            <h4><a href="./blog-details.html">Les Beautés du Lac Kivu</a></h4>
+                            <div class="b-time"><i class="icon_clock_alt"></i> 08 Mars, 2026</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load More -->
+                <div class="col-lg-12">
+                    <div class="load-more">
+                        <a href="#" class="primary-btn">Voir plus</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+
+            <div class="footer-text">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+
+                            <div class="logo">
+                                <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            </div>
+
+                            <p>Nous sommes enchantés <br> de vous accueillir.</p>
+
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-tripadvisor"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+
+                            <h6>Contactez-nous</h6>
+
+                            <ul>
+                                <li>+243 XXX XXX XXX</li>
+                                <li>iciadressmail@gmail.com</li>
+                                <li>Minova, RDC</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+
+                            <h6>Pour recevoir nos offres, entrez votre email (facultatif)</h6>
+                            <p>Recevez les meilleures promotions et actualités.</p>
+
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Votre email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright-option">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Politique environnementale</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="co-text">
+                            <p>
+                                Copyright ©
+                                <script>document.write(new Date().getFullYear());</script>
+                                Tous droits réservés | Les Archanges Minova Hôtel  
+                                <i class="fa fa-heart"></i> conçu par 
+                                <a href="#" target="_blank">ManirX_Digital</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Search Model -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Rechercher ici...">
+            </form>
+
+        </div>
+    </div>
+
+    <!-- JS Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

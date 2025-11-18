@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sona Template">
+    <meta name="keywords" content="Sona, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Les Archanges MINOVA | page d'Accueil</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles externes -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!-- Ajout: CSS spécifique pour forcer l'apparence du lien actif -->
+    <style>
+      /* Texte du lien actif (desktop) */
+      .mainmenu ul li.active > a,
+      .mainmenu ul li > a.active {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+
+      /* Si le design original utilise underline / background, ajoute ceci aussi */
+      .mainmenu ul li.active > a::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin-top: 6px;
+        background: #dfa974;
+        border-radius: 2px;
+      }
+
+      /* Mobile / offcanvas menu : couvrir les clones/variantes */
+      .offcanvas-menu-wrapper .mainmenu ul li.active > a,
+      .mobile-menu .mainmenu ul li.active > a {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+
+      /* Cas où l'élément actif est sur l'<a> plutôt que sur le <li> */
+      .mainmenu ul li > a.active,
+      .offcanvas-menu-wrapper .mainmenu ul li > a.active {
+        color: #dfa974 !important;
+        font-weight: 700;
+      }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder"><div class="loader"></div></div>
+
+    <!-- Offcanvas Menu Section Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="canvas-open"><i class="icon_menu"></i></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close"><i class="icon_close"></i></div>
+        <div class="search-icon search-switch"><i class="icon_search"></i></div>
+
+        <div class="header-configure-area">
+            <div class="language-option">
+                <img src="img/flag.jpg" alt="">
+                <span>EN <i class="fa fa-angle-down"></i></span>
+                <div class="flag-dropdown">
+                    <ul><li><a href="#">Fr</a></li></ul>
+                </div>
+            </div>
+            <a href="#" class="bk-btn">Réservez maintenant</a>
+        </div>
+
+        <nav class="mainmenu mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Accueil</a></li>
+                <li><a href="./rooms.html">Chambres</a></li>
+                <li><a href="./about-us.html">À propos de nous</a></li>
+                <li><a href="./pages.html">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./room-details.html">Détails de la chambre</a></li>
+                        <li><a href="#">Chambre de Luxe</a></li>
+                        <li><a href="#">Chambre Familiale</a></li>
+                        <li><a href="#">Chambre Premium</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Nouvelles</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile-menu-wrap"></div>
+
+        <div class="top-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-tripadvisor"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+
+        <ul class="top-widget">
+            <li><i class="fa fa-phone"></i> +243 XXX XXX XXX</li>
+            <li><i class="fa fa-envelope"></i> iciadressmail.com</li>
+        </ul>
+    </div>
+    <!-- Offcanvas Menu Section End -->
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="tn-left">
+                            <li><i class="fa fa-phone"></i> +243 XXX XXX XXX</li>
+                            <li><i class="fa fa-envelope"></i> iciadressmail@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tn-right">
+                            <div class="top-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <a href="#" class="bk-btn">Réservez maintenant</a>
+                            <div class="language-option">
+                                <img src="img/flag1.jpg" alt="">
+                                <span>FR <i class="fa fa-angle-down"></i></span>
+                                <div class="flag-dropdown">
+                                    <ul><li><a href="#">En</a></li></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo"><a href="./index.html"><img src="img/logo.png" alt=""></a></div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="nav-menu">
+                            <nav class="mainmenu">
+                                <ul>
+                                    <li class="active"><a href="./index.html">Accueil</a></li>
+                                    <li><a href="./rooms.html">Chambres</a></li>
+                                    <li><a href="./restaurant.html">Restaurant</a></li>
+                                    <li><a href="./about-us.html">À propos de nous</a></li>
+                                    <li><a href="./pages.html">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./room-details.html">Détails de la chambre</a></li>
+                                            <li><a href="./blog-details.html">Détails du blog</a></li>
+                                            <li><a href="#">Chambre Familiale</a></li>
+                                            <li><a href="#">Chambre Premium</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./blog.html">Actualités</a></li>
+                                    <li><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="nav-right search-switch"><i class="icon_search"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- SCRIPT: définir automatique l'élément actif selon l'URL (utile si li.active n'est pas correct) -->
+    <script>
+      (function(){
+        try {
+          // Récupère tous les liens du menu (desktop + mobile)
+          const links = document.querySelectorAll('.mainmenu a');
+          const current = location.pathname.split('/').pop() || 'index.html';
+
+          links.forEach(a => {
+            // normalization simple : compare le href (nom de fichier) avec location
+            const href = a.getAttribute('href') ? a.getAttribute('href').split('/').pop() : '';
+            if (href === current || (href === '' && current === 'index.html')) {
+              // retire active ailleurs (optionnel)
+              document.querySelectorAll('.mainmenu li.active').forEach(li => li.classList.remove('active'));
+              // ajoute active sur le parent li
+              if (a.parentElement) a.parentElement.classList.add('active');
+             
+              a.classList.add('active');
+            }
+          });
+        } catch (e) {
+          console.warn('Erreur script active menu:', e);
+        }
+      })();
+    </script>
+
+    <!-- Blog Details Hero Section Begin -->
+   <section class="blog-details-hero set-bg" data-setbg="img/blog/blog-details/blog-details-hero.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="bd-hero-text">
+                    <span>Les Archanges Minova</span>
+                    <h2>Informations et conseils pour vos voyages autour du monde</h2>
+                    <ul>
+                        <li class="b-time" style="color: aliceblue;"><i class="icon_clock_alt"></i> 15 Avril 2026</li>
+                        <li style="color: aliceblue;"><i class="icon_profile"></i> Équipe Archanges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Details Hero End -->
+
+<!-- Blog Details Section Begin -->
+<section class="blog-details-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="blog-details-text">
+                    <div class="bd-title">
+                        <p>Envie d’une aventure inoubliable ? Les Archanges Minova vous 
+                            accompagnent dans la découverte des plus belles destinations de 
+                            la région. Que ce soit une escapade au bord du lac Kivu, une visite des collines 
+                            environnantes ou une exploration des sites touristiques du Sud-Kivu, 
+                            chaque voyage vous offre détente, nature et expériences uniques.</p>
+                        <p>Au cœur du Sud-Kivu, découvrez la beauté naturelle autour de Minova : les collines verdoyantes, 
+                            le lac Kivu majestueux, des forêts luxuriantes et des paysages à couper le souffle.
+                            Une destination idéale pour les amoureux de la nature, les amateurs de randonnée ou 
+                            ceux qui cherchent des séjours paisibles au cœur d’un environnement authentique.</p>
+                    </div>
+
+                    <div class="bd-pic">
+                        <div class="bp-item">
+                            <img src="img/blog/blog-details/blog-details-1.jpg" alt="">
+                        </div>
+                        <div class="bp-item">
+                            <img src="img/blog/blog-details/blog-details-2.jpg" alt="">
+                        </div>
+                        <div class="bp-item">
+                            <img src="img/blog/blog-details/blog-details-3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bd-more-text">
+                        <div class="bm-item">
+                           <h4>Explorer Minova et ses environs</h4>
+<p>Minova est une ville dynamique, mais se déplacer peut parfois demander un peu d’organisation. 
+    Entre les routes pittoresques et les trajets vers les sites naturels,
+     il est parfois préférable de recourir à un service privé pour profiter pleinement de votre séjour. 
+     Une excursion organisée ou un transport privé vous garantit confort et tranquillité tout en découvrant 
+     les merveilles de la région.</p>
+
+                        </div>
+                        <div class="bm-item">
+                           <h4>Se déplacer à Minova ? Une aventure locale !</h4>
+<p>Se déplacer à Minova peut parfois réserver des surprises. Entre routes animées, 
+    chauffeurs pressés et imprévus du quotidien, il est important de choisir des solutions 
+    fiables pour voyager sereinement et profiter pleinement de votre séjour avec Les Archanges 
+    Minova Hotel.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="tag-share">
+                        <div class="tags">
+                            <a href="#">Voyage</a>
+                            <a href="#">Conseils</a>
+                            <a href="#">Aventure</a>
+                        </div>
+                        <div class="social-share">
+                            <span>Partager :</span>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="comment-option">
+                        <h4>2 Commentaires</h4>
+
+                        <div class="single-comment-item first-comment">
+                            <div class="sc-author">
+                                <img src="img/blog/blog-details/avatar/avatar-1.jpg" alt="">
+                            </div>
+                            <div class="sc-text">
+                                <span>27 Août 2024</span>
+                                <h5>Thierry Shamavu</h5>
+                                <p>Très bel article ! Les informations sont utiles et bien présentées. 
+                                    Merci aux Archanges Minova Hotel pour ce contenu inspirant et 
+                                    pour nous guider dans la découverte de Minova et ses alentours</p>
+                                <a href="#" class="comment-btn">J’aime</a>
+                                <a href="#" class="comment-btn">Répondre</a>
+                            </div>
+                        </div>
+
+                        <div class="single-comment-item reply-comment">
+                            <div class="sc-author">
+                                <img src="img/blog/blog-details/avatar/avatar-2.jpg" alt="">
+                            </div>
+                            <div class="sc-text">
+                                <span>27 juillet 2024</span>
+                                <h5>jeanne Kavira</h5>
+                                <p>Je confirme ! Toujours un plaisir de lire vos articles.
+                                     Merci aux Archanges Minova Hotel pour ces contenus inspirants. 
+                                     Continuez ainsi !</p>
+                                <a href="#" class="comment-btn like-btn">J’aime</a>
+                                <a href="#" class="comment-btn reply-btn">Répondre</a>
+                            </div>
+                        </div>
+
+                        <div class="single-comment-item second-comment">
+                            <div class="sc-author">
+                                <img src="img/blog/blog-details/avatar/avatar-3.jpg" alt="">
+                            </div>
+                            <div class="sc-text">
+                                <span>21 avril 2025</span>
+                                <h5>Kabera Steve</h5>
+                                <p>Article magnifique, très instructif. J’adore votre façon de présenter les lieux.</p>
+                                <a href="#" class="comment-btn">J’aime</a>
+                                <a href="#" class="comment-btn">Répondre</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="leave-comment">
+                        <h4>Laisser un commentaire</h4>
+                        <form action="#" class="comment-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Nom">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <input type="text" placeholder="Site Web">
+                                    <textarea placeholder="Votre message"></textarea>
+                                    <button type="submit" class="site-btn">Envoyer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Details Section End -->
+
+<!-- Recommend Blog Section Begin -->
+<section class="recommend-blog-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>Recommandés</h2>
+                </div>
+            </div>
+        </div>
+
+       <div class="row">
+    <!-- Article 1 -->
+    <div class="col-md-4">
+        <div class="blog-item set-bg" data-setbg="img/blog/blog-1.jpg">
+            <div class="bi-text">
+                <span class="b-tag">Voyage</span>
+                <h4><a href="#">À la découverte du Sud-Kivu</a></h4>
+                <div class="b-time"><i class="icon_clock_alt"></i> 15 Avril 2024</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="col-md-4">
+        <div class="blog-item set-bg" data-setbg="img/blog/blog-2.jpg">
+            <div class="bi-text">
+                <span class="b-tag">Nature & Aventure</span>
+                <h4><a href="#">Conseils pour choisir votre caravane</a></h4>
+                <div class="b-time"><i class="icon_clock_alt"></i> 15 Avril 2024</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Article 3 -->
+    <div class="col-md-4">
+        <div class="blog-item set-bg" data-setbg="img/minova.jpeg">
+            <div class="bi-text">
+                <span class="b-tag">Destination</span>
+                <h4><a href="#">Explorer les colines au tour de minova  </a></h4>
+                <div class="b-time"><i class="icon_clock_alt"></i> 21 Avril 2024</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+    <!-- Recommend Blog Section End -->
+
+     <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ft-about">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="img/footer-logo.png" alt="">
+                                </a>
+                            </div>
+                            <p>Nous sommes enchantés <br /> de vous accueillir</p>
+                            <div class="fa-social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-contact">
+                            <h6>Contactez-nous</h6>
+                            <ul>
+                                <li>+243 XXX XXX XXX</li>
+                                <li>iciadressmail@gmail.com</li>
+                                <li>Minova</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <div class="ft-newslatter">
+                            <h6>Pour recevoir nos offres veillez entrez votre mail (facultatif)</h6>
+                            <p>Recevez les dernières mises à jour et offres.</p>
+                            <form action="#" class="fn-form">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-option">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                            <li><a href="#">Confidentialité</a></li>
+                            <li><a href="#">Politique environnementale</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="co-text"><p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Les Archanges Minova Hotel <i class="fa fa-heart" aria-hidden="true"></i> par <a href="" target="_blank">ManirX_digital</a>
+</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch"><i class="icon_close"></i></div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Rechercher ici.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

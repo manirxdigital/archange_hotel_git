@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutons d'action</title>
+
+  <style>
+    /* ===== STYLE DES BOUTONS ===== */
+    .primary-btn {
+      display: inline-block;
+      font-size: 14px;
+      color: #ffffff;
+      background: #5C7AEA;
+      padding: 12px 28px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .primary-btn:hover {
+      background: #4b69d4;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ===== CONTENEURS ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .buttons-wrap {
+      padding: 60px 0;
+    }
+
+    .btn-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 6px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 8px 20px rgba(12,18,30,0.06);
+      text-align: center;
+    }
+
+    .btn-card h4 {
+      margin-bottom: 18px;
+      font-size: 22px;
+      color: #333;
+    }
+
+    .btn-row .primary-btn {
+      margin: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="buttons-wrap">
+    <div class="btn-card">
+      <h4>Actions rapides</h4>
+
+      <div class="btn-row">
+        <!-- Bouton 1 -->
+        <a href="#" class="primary-btn">Détails de la chambre</a>
+
+        <!-- Bouton 2 -->
+        <a href="#" class="primary-btn">Détail du blog</a>
+
+        <!-- Bouton 3 -->
+        <a href="#" class="primary-btn">Chambre familiale</a>
+
+        <!-- Bouton 4 -->
+        <a href="#" class="primary-btn">Chambre Premium</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

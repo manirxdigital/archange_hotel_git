@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulaire de réservation — Hôtel & Restaurant</title>
+  <style>
+    :root{--accent:#0b78d1;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.4;margin:0;background:#f6f8fb;color:#111}
+    .container{max-width:900px;margin:32px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(20,30,60,0.08)}
+    h1{margin:0 0 8px;font-size:20px}
+    p.lead{margin:0 0 18px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;font-size:13px;margin-bottom:6px}
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select, textarea, input[type="number"]{
+      width:100%;padding:10px;border:1px solid #e3e7ee;border-radius:8px;font-size:14px;background:#fff}
+    .full{grid-column:1/ -1}
+    .checkboxes label{display:inline-flex;align-items:center;margin-right:12px}
+    .section{padding:14px;border:1px solid #eef2f7;border-radius:10px;margin-bottom:12px;background:#fcfeff}
+    .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:8px}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    button.ghost{background:transparent;color:var(--accent);border:1px solid #d7e8ff}
+    .toggle{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+    small{color:var(--muted)}
+    .success{padding:12px;border-radius:8px;background:#e6ffef;color:#064c2b;margin-top:12px}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Formulaire de réservation — Hôtel & Restaurant</h1>
+    <p class="lead">Remplissez le formulaire ci‑dessous pour réserver une chambre et/ou une table. Tous les champs marqués d'un astérisque (*) sont obligatoires.</p>
+
+    <form id="reservationForm" novalidate>
+      <div class="section">
+        <h2 style="font-size:16px;margin:0 0 8px">Informations personnelles</h2>
+        <div class="grid">
+          <div>
+            <label for="fullname">Nom et prénom *</label>
+            <input id="fullname" name="fullname" type="text" required placeholder="Jean Dupont">
+          </div>
+          <div>
+            <label for="phone">Téléphone *</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+243 99 123 4567">
+          </div>
+          <div>
+            <label for="email">Adresse e‑mail *</label>
+            <input id="email" name="email" type="email" required placeholder="exemple@domaine.com">
+          </div>
+          <div>
+            <label for="address">Adresse (facultatif)</label>
+            <input id="address" name="address" type="text" placeholder="Rue, ville, pays">
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 style="font-size:16px;margin:0 0 8px">Type de réservation</h2>
+        <div class="toggle">
+          <label><input id="resRoom" type="checkbox" checked> Réservation de chambre</label>
+          <label><input id="resTable" type="checkbox" checked> Réservation de table</label>
+        </div>
+      </div>
+
+      <!-- Chambre -->
+      <div id="roomSection" class="section">
+        <h2 style="font-size:16px;margin:0 0 8px">Réservation de chambre</h2>
+        <div class="grid">
+          <div>
+            <label>Type de chambre *</label>
+            <select id="roomType" name="roomType" required>
+              <option value="">-- Choisir --</option>
+              <option>Simple</option>
+              <option>Double</option>
+              <option>Suite</option>
+              <option>Familiale</option>
+            </select>
+          </div>
+          <div>
+            <label for="guests">Nombre de personnes *</label>
+            <input id="guests" name="guests" type="number" min="1" max="10" value="1" required>
+          </div>
+          <div>
+            <label for="checkin">Date d'arrivée *</label>
+            <input id="checkin" name="checkin" type="date" required>
+          </div>
+          <div>
+            <label for="checkout">Date de départ *</label>
+            <input id="checkout" name="checkout" type="date" required>
+          </div>
+          <div>
+            <label for="arrivalTime">Heure approximative d'arrivée</label>
+            <input id="arrivalTime" name="arrivalTime" type="time">
+          </div>
+          <div>
+            <label>Prestations</label>
+            <div class="checkboxes">
+              <label><input type="checkbox" name="services" value="petitdej"> Petit-déjeuner inclus</label>
+              <label><input type="checkbox" name="services" value="demipension"> Demi-pension</label>
+              <label><input type="checkbox" name="services" value="pension"> Pension complète</label>
+            </div>
+          </div>
+          <div class="full">
+            <label for="roomRequests">Autres demandes</label>
+            <textarea id="roomRequests" name="roomRequests" rows="3" placeholder="Ex : lit bébé, étage élevé, chambre calme..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div id="tableSection" class="section">
+        <h2 style="font-size:16px;margin:0 0 8px">Réservation de table</h2>
+        <div class="grid">
+          <div>
+            <label for="diningDate">Date de réservation *</label>
+            <input id="diningDate" name="diningDate" type="date">
+          </div>
+          <div>
+            <label for="diningTime">Heure souhaitée *</label>
+            <input id="diningTime" name="diningTime" type="time">
+          </div>
+          <div>
+            <label for="covers">Nombre de convives *</label>
+            <input id="covers" name="covers" type="number" min="1" max="30">
+          </div>
+          <div>
+            <label>Préférences</label>
+            <select id="seating" name="seating">
+              <option value="">-- Choisir --</option>
+              <option>En salle</option>
+              <option>En terrasse</option>
+              <option>Près de la fenêtre</option>
+            </select>
+          </div>
+          <div class="full">
+            <label for="diet">Régimes alimentaires / Allergies</label>
+            <textarea id="diet" name="diet" rows="2" placeholder="Ex : végétarien, sans gluten, allergie aux crustacés..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 style="font-size:16px;margin:0 0 8px">Paiement & confirmation</h2>
+        <div class="grid">
+          <div>
+            <label>Mode de paiement préféré</label>
+            <select id="payment" name="payment">
+              <option>Sur place</option>
+              <option>Carte bancaire</option>
+              <option>Virement</option>
+              <option>Espèces</option>
+              <option>Chèque</option>
+            </select>
+          </div>
+          <div>
+            <label for="notes">Notes (facultatif)</label>
+            <input id="notes" name="notes" type="text" placeholder="Ex : demande de transfert aéroport">
+          </div>
+          <div class="full">
+            <label><input id="agree" type="checkbox" required> J'accepte les conditions générales de réservation et confirme l'exactitude des informations. *</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="button" class="ghost" onclick="window.print()">Imprimer</button>
+        <button type="submit">Envoyer la réservation</button>
+      </div>
+
+      <div id="result" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <script>
+    // Affichage conditionnel des sections
+    const roomChk = document.getElementById('resRoom');
+    const tableChk = document.getElementById('resTable');
+    const roomSec = document.getElementById('roomSection');
+    const tableSec = document.getElementById('tableSection');
+
+    function updateSections(){
+      roomSec.style.display = roomChk.checked ? 'block' : 'none';
+      tableSec.style.display = tableChk.checked ? 'block' : 'none';
+
+      // Rendre les champs requis seulement si la section est visible
+      document.getElementById('roomType').required = roomChk.checked;
+      document.getElementById('guests').required = roomChk.checked;
+      document.getElementById('checkin').required = roomChk.checked;
+      document.getElementById('checkout').required = roomChk.checked;
+
+      document.getElementById('diningDate').required = tableChk.checked;
+      document.getElementById('diningTime').required = tableChk.checked;
+      document.getElementById('covers').required = tableChk.checked;
+    }
+
+    roomChk.addEventListener('change', updateSections);
+    tableChk.addEventListener('change', updateSections);
+    updateSections();
+
+    // Validation et soumission (simulée côté client)
+    const form = document.getElementById('reservationForm');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      // validation HTML5
+      if(!form.checkValidity()){
+        form.reportValidity();
+        return;
+      }
+
+      // Vérification logique : si chambre sélectionnée, date départ > date arrivée
+      if(roomChk.checked){
+        const inDate = document.getElementById('checkin').value;
+        const outDate = document.getElementById('checkout').value;
+        if(inDate && outDate && (new Date(outDate) <= new Date(inDate))){
+          alert('La date de départ doit être postérieure à la date d\'arrivée.');
+          return;
+        }
+      }
+
+      // Préparer un résumé (simple)
+      const data = new FormData(form);
+      const summary = [];
+      for (const [k,v] of data.entries()){
+        summary.push(k+': '+v);
+      }
+
+      result.innerHTML = '<div class="success">Réservation envoyée avec succès !<br><small>Résumé : ' + summary.slice(0,8).join(' · ') + (summary.length>8 ? ' · ...' : '') + '</small></div>';
+
+      // Ici : envoi au serveur via fetch/AJAX si nécessaire.
+      // Exemple (commenté) :
+      // fetch('/api/reservations', {method:'POST', body: data}).then(...)
+
+      // réinitialiser le formulaire si vous le souhaitez :
+      // form.reset(); updateSections();
+    });
+  </script>
+</body>
+</html>
